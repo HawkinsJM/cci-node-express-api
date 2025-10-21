@@ -8,9 +8,8 @@ Instead, back-end code can be used to generate pages and responses to send to a 
 
 [Node.js](https://nodejs.org/en/about/) is a popular runtime that lets you run server-side JavaScript.
 This project uses the [Express](https://expressjs.com/) framework.
-Please do not upgrade to Express version 5, which is incompatible with the version of node.js that Glitch uses.
 
-_Last updated: 19 May 2025_
+_Last updated: 21 October 2025_
 
 ## Prerequisites
 
@@ -31,18 +30,7 @@ If you've written JavaScript for client-side web pages this is a little differen
 
 ← `package.json`: The NPM packages for your project's dependencies.
 
-## Try this next 🏗️
+## Originally built on Glitch
 
-___Want a minimal version of this project to build your own Node.js app? Check out [Blank Node](https://glitch.com/edit/#!/remix/glitch-blank-node)!___
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-Note: this is a template developed by Glitch and uses Fastify instead of Express.
-Both libraries are similar in function, but have different syntax.
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+[Glitch](https://glitch.com) was a friendly community where people shared and hosted creative websites. Glitch shut down in summer 2025.
+Some of the text in this file is adapted from their node start project README.
