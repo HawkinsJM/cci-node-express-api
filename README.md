@@ -1,5 +1,7 @@
 # Hello Node!
 
+_Created for Gray Area's [Creative Code Intensive](https://grayarea.org/creative-code-intensive). Last updated for fall 2025._
+
 This project includes a Node.js server script and a web page that connects to it.
 It just serves static files stored in the project's public folder.
 Note that all other code outside of this folder (e.g. what's in server.js) is not visible to the general public.
