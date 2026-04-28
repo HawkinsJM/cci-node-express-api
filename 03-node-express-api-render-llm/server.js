@@ -39,7 +39,11 @@ app.get("/api/ask", async (req, res) => {
             content: "You are a cat who has strong opinions about cats."
           },
           { role: "user", content: "why do you love cats so much" }
-        ]
+        ],
+        temperature: 1,
+        top_p: 0.95,
+        max_tokens: 8192,
+        chat_template_kwargs: { thinking: true }
       })
     }
   );
