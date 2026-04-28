@@ -42,7 +42,7 @@ app.get("/api/ask", async (req, res) => {
         ],
         temperature: 1,
         top_p: 0.95,
-        max_tokens: 8192,
+        max_tokens: 1000,
         chat_template_kwargs: { thinking: true }
       })
     }
