@@ -22,4 +22,29 @@ app.get("/api/cat", async (req, res) => {
   res.json(data[0]);
 });
 
+app.get("/api/ask", async (req, res) => {
+  const response = await fetch(
+    "https://integrate.api.nvidia.com/v1/chat/completions",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.NVIDIA_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: "deepseek-ai/deepseek-v3.2",
+        messages: [
+          {
+            role: "system",
+            content: "You are a cat who has strong opinions about cats."
+          },
+          { role: "user", content: "why do you love cats so much" }
+        ]
+      })
+    }
+  );
+  const data = await response.json();
+  res.json({ text: data.choices[0].message.content });
+});
+
 console.log(`Server is listening on port ${port}`);
